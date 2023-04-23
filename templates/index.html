@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Homepage - Tair</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Ubuntu:wght@700&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+  <!-- CSS Stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link href="{{ url_for('static', filename='css/styles.css')}}" rel="stylesheet">
+  <link rel="icon" href="{{ url_for('static', filename='img/favicon.ico')}}">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#title">Tair Dulatuly</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#title">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pricing">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#cta">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  {% import "bootstrap/wtf.html" as wtf %}
+
+  <section class="colored-section" id="title">
+    <!-- Title -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="big-heading">Diverse Python Developer.</h1>
+          <h5>Need a python backend/script/data-science developer? Well, I am!</p>
+            <a href="mailto:dtair@icloud.com" class="btn btn-primary">Hire me!</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Features -->
+  <section class="white-section" id="about">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 col-md-10 mx-auto">
+          <h2>Hello.</h2>
+          <p>
+            My name is Tair, I am a student of <a href="https://www.nis.edu.kz/en/">NIS</a>.
+            I was born on August 25, 2007. My skill is coding.
+            I liked to watch people coding since when I was ten, but I never really did code until I turned fourteen.
+            It always has been interesting and impressive to me, since it makes your computer do anything you want.
+          </p>
+          <br>
+          <p>
+            I am learning to code from various resources, like Udemy, Coursera, and more.
+            I try to practice by doing coding exercises, and projects, which you can view section below.
+            I believe that by coding I can make life easier not only for myself but also for others too!
+          </p>
+          <br>
+          <p>I like to play games and watch movies.</p>
+          <br>
+
+        </div>
+        <div class="col-lg-6 col-md-10 mx-auto">
+          <h3>My skill levels.</h3>
+          <div class="progress">
+            <div class="progress-bar bg-primary" role="progressbar" style="width: 40%" aria-valuenow="25"
+              aria-valuemin="0" aria-valuemax="100">Photoshop</div>
+          </div>
+          <br>
+          <div class="progress">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 45%" aria-valuenow="100"
+              aria-valuemin="0" aria-valuemax="100">Unity C#</div>
+          </div> <br>
+          <div class="progress">
+            <div class="progress-bar bg-info" role="progressbar" style="width: 40%" aria-valuenow="50" aria-valuemin="0"
+              aria-valuemax="100">C++</div>
+          </div> <br>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="15" aria-valuemin="0"
+              aria-valuemax="100">Scripting</div>
+            <div class="progress-bar bg-secondary" role="progressbar" style="width: 15%" aria-valuenow="30"
+              aria-valuemin="0" aria-valuemax="100">Data-Science</div>
+            <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="20" aria-valuemin="0"
+              aria-valuemax="100">Back-End</div>
+          </div> <br>
+          <div class="progress">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 65%" aria-valuenow="100"
+              aria-valuemin="0" aria-valuemax="100">HTML</div>
+          </div> <br>
+          <div class="progress">
+            <div class="progress-bar bg-primary" role="progressbar" style="width: 60%" aria-valuenow="100"
+              aria-valuemin="0" aria-valuemax="100">CSS </div>
+          </div> <br>
+          <div class="progress">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100"
+              aria-valuemin="0" aria-valuemax="100">Googling</div>
+          </div> <br>
+          
+        </div>
+      </div>
+      <div class="row">
+
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-crosshairs fa-4x"></i>
+          <h3 class="feature-title">Hearing.</h3>
+          <p>I will do my best to make your requests precise.</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-heart fa-4x"></i>
+          <h3 class="feature-title">Guaranteed to work.</h3>
+          <p>Find the feature you want or your money back.</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-comments fa-4x"></i>
+          <h3 class="feature-title">Easy to get in touch.</h3>
+          <p>So easy, that I will respond very quickly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="colored-section" id="testimonials">
+    <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active container-fluid">
+          <a href="https://tair-blog.herokuapp.com/">
+            <h2 class="testimonial-text">My blog.</h2>
+          </a>
+
+          <h6 class="small">Fully functional blog with users, posts and comments.</h6>
+          <br>
+          <img class="testimonial-image" src="{{ url_for('static', filename='img/blog.png')}}" alt="">
+        </div>
+        <div class="carousel-item container-fluid">
+          <a href="https://documenter.getpostman.com/view/22831854/VUjTiMwY">
+            <h2 class="testimonial-text">Cafe API.</h2>
+          </a>
+          <h6 class="small">API with all cafes in a database, random cafe or cafe by location. </h6>
+          <br>
+          <img class="testimonial-image" src="{{ url_for('static', filename='img/api.png')}}" alt="">
+        </div>
+        <div class="carousel-item container-fluid">
+          <h2 class="testimonial-text">Death rate analysis.</h2>
+          <h6 class="small">Dr. Semmelweis handwashing analysis.</h6>
+          <br>
+          <img class="testimonial-image" src="{{ url_for('static', filename='img/analysis.png')}}" alt="">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+
+  </section>
+
+  <!-- Press -->
+  <section class="colored-section" id="press">
+    <h3>See:</h3>
+    <li class="list-inline-item">
+      <h6 class="small"><a href="https://www.linkedin.com/in/tair-dulatuly-884599241">Certificates</a></h6>
+    </li>
+    <li class="list-inline-item">
+      <h6 class="small"><a href="https://github.com/dtekio">Projects</a></h6>
+    </li>
+    <li class="list-inline-item">
+      <h6 class="small"><a href="https://www.showwcase.com/dtekio">Additional skills</a></h6>
+    </li>
+    <li class="list-inline-item">
+      <h6 class="small"><a href="https://leetcode.com/dtekio/">Leetcode</a></h6>
+    </li>
+  </section>
+
+  <!-- Pricing -->
+  <section class="white-section" id="pricing">
+    <h2 class="section-heading">Features</h2>
+    <p>I translate desires into reality.</p>
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="card col-lg-6">
+          <div class="card-header">
+            <h3>Website</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">2$</h2>
+            <p>Unlimited Site Usage</p>
+            <a href="#cta"><button class="btn btn-lg btn-block btn-outline-dark" type="button">Contact</button></a>
+          </div>
+        </div>
+
+        <div class="card col-lg-6">
+          <div class="card-header">
+            <h3>Script</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">1$</h2>
+            <p>Full control to view and edit</p>
+            <a href="#cta"><button class="btn btn-lg btn-block btn-outline-dark" type="button">Contact</button></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+    <hr>
+
+  </section>
+
+  <!-- Footer -->
+  <footer id="cta">
+    <div class="container-fluid">
+      {% if msg_sent: %}
+      <h1>Your message has been successfully sent.</h1>
+      {% else: %}
+      <h1>Contact me</h1>
+      {% endif %}
+      <div class="row">
+        <div class="col-lg-6">
+          <h3>Send me a message</h3>
+          {{ wtf.quick_form(form, novalidate=True, button_map={"submit": "primary"}) }}
+        </div>
+
+        <div class="col-lg-6">
+          <h3 class="contact">Contact details</h3>
+          <p class="small">
+            Phone number: +7 (701) 888 19-22 <br>
+            E-mail: dtair@icloud.com <br>
+          </p>
+          <p class="small copyright text-muted">Copyright &copy; Tair 2022</p>
+          <ul class="list-inline text-center">
+            <h2>Find me on</h1>
+              <li class="list-inline-item">
+                <a href="https://twitter.com/TairD__">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/tair-dulatuly-884599241">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://github.com/dtekio">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
